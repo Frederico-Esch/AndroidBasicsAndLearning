@@ -1,0 +1,5 @@
+<resources>
+    <string name="app_name">FrasesDoDia</string>
+    <string name="butNewPhrase">Nova Frase</string>
+    <string name="PhrasePlaceHolder">Gere uma nova frase</string>
+</resources>
