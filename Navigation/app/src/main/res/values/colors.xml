@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="purple_200">#FF7d22ff</color>
+    <color name="purple_500">#FF6200EE</color>
+    <color name="purple_700">#FF3700B3</color>
+    <color name="teal_200">#FF03DAC5</color>
+    <color name="teal_700">#FF018786</color>
+    <color name="black">#FF000000</color>
+    <color name="white">#FFFFFFFF</color>
+    <!-- Cores Boas -->
+    <!-- ROSA -->
+    <color name="pink_700">#FF9100b3</color>
+    <color name="pink_500">#FFd900ee</color>
+    <color name="pink_200">#FFec22ff</color>
+    <!-- AZUL -->
+    <color name="blue_700">#FF0022b3</color>
+    <color name="blue_500">#FF0015ee</color>
+    <color name="blue_200">#FF2235ff</color>
+</resources>
