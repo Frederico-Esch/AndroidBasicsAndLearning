@@ -1,0 +1,14 @@
+<resources>
+    <string name="app_name">Drawer</string>
+    <string name="drawer_menu_home">Home</string>
+    <string name="drawer_menu_edit">Edit Info</string>
+    <string name="drawer_menu_profile">Profile</string>
+    <string name="profile_frag_name">Name:</string>
+    <string name="profile_frag_age">Age:</string>
+    <string name="profile_frag_email">Email:</string>
+    <string name="profile_frag_cel">Cel:</string>
+    <string name="wasntInformed">hasn\'t been informed yet</string>
+
+    <string name="nav_open">Open</string>
+    <string name="nav_close">Close</string>
+</resources>

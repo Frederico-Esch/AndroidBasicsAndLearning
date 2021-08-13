@@ -1,0 +1,21 @@
+<resources>
+    <string name="app_name">Gorgeta</string>
+    <string name="name_menu">Nome</string>
+    <string name="email_menu">Email</string>
+    <string name="date_menu">Data</string>
+    <string name="botao">Enviar</string>
+    <string name="placeHolderMainAct">"Nome:\nData:\nEmail"</string>
+    <string name="Error_nome">Nome deve conter apenas Letras</string>
+    <string name="Error_email">Email invalido</string>
+    <string name="agree_text">Eu li e concordo com os termos de serviço</string>
+    <string name="receiveE_text">Eu quero receber Email de atualização</string>
+    <string name="will_receiveE">"Você se cadastrou no recebimento de atualizações!\n"</string>
+    <string name="error_send">Campo Incompleto ou os Termos não foram aceitos.</string>
+    <string name="clearText">Limpar Tudo</string>
+    <string name="clearedText">Limpo</string>
+    <string name="clearTextCancelled">Operação de limpeza cancelada</string>
+    <string name="clear_dialog_title">Limpar?</string>
+    <string name="clear_dialog_message">Você tem certeza que deseja limpar todas as caixas de texto?</string>
+    <string name="No">Não</string>
+    <string name="Yes">Sim</string>
+</resources>

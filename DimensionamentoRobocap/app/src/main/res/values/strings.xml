@@ -1,0 +1,17 @@
+<resources>
+    <string name="app_name">Dimensionamento Robocap</string>
+    <string name="no_selection">Nenhum circuito selecionado</string>
+    <string name="navigation_error">Algo deu errado</string>
+    <!-- menu titles -->
+    <string name="menu_lista">Lista de circuitos</string>
+    <string name="menu_circuito">Calcular Circuito</string>
+    <string name="menu_itens">Lista de peças</string>
+    <string name="menu_separator">Peças</string>
+    <!-- drawer support strings -->
+    <string name="open">Open</string>
+    <string name="close">Close</string>
+    <string name="header_title">Robocap</string>
+    <!--Circuit Fragments -->
+    <string name="string_selector">Selecione o que deseja calcular:</string>
+    <string name="voltage_divider">Divisor de Voltagem</string>
+</resources>

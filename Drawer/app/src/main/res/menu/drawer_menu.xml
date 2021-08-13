@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:showIn="navigation_view"
+    android:statusBarColor="@android:color/transparent">
+
+    <group android:checkableBehavior="single" >
+        <item android:id="@+id/drawer_menu_home_frag"
+            android:icon="@drawable/home_icon_24"
+            android:title="@string/drawer_menu_home"/>
+
+        <item android:id="@+id/drawer_menu_edit_frag"
+            android:icon="@drawable/edit_icon_24"
+            android:title="@string/drawer_menu_edit"/>
+
+        <item android:id="@+id/drawer_menu_profile_frag"
+            android:icon="@drawable/perfil_icon_24"
+            android:title="@string/drawer_menu_profile"/>
+    </group>
+</menu>
