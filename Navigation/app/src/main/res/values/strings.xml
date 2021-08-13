@@ -1,6 +1,10 @@
 <resources>
     <string name="app_name">Navigation</string>
     <string name="text_edit_name">Nome</string>
+    <string name="text_edit_email">Email</string>
     <string name="text_edit_age">Idade</string>
-    <string name="confirm_but">Enviar</string>
+    <string name="confirm_but">Salvar</string>
+    <string name="see_list_but">Ver lista</string>
+    <string name="age_text">Anos</string>
+    <string name="invalid_text_input">Inválido</string>
 </resources>

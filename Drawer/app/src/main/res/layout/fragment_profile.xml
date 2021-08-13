@@ -1,0 +1,115 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:gravity="center"
+    tools:context=".ProfileFragment"
+    android:padding="5dp">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:gravity="center">
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="2"
+            android:textAlignment="center"
+            android:text="@string/profile_frag_name"
+            android:background="@drawable/relevant_background"
+            android:textColor="?relevantText"
+            android:paddingHorizontal="5dp"
+            android:layout_margin="5dp"
+            android:textSize="15sp"/>
+        <TextView
+            android:id="@+id/profile_frag_name"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight=".5"
+            android:text="PLACE HOLDER NAME"
+            android:textSize="15sp"
+            android:fontFamily="@font/kanit_bold" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:gravity="center">
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="2"
+            android:textAlignment="center"
+            android:text="@string/profile_frag_age"
+            android:background="@drawable/relevant_background"
+            android:textColor="?relevantText"
+            android:paddingHorizontal="5dp"
+            android:layout_margin="5dp"
+            android:textSize="15sp"/>
+        <TextView
+            android:id="@+id/profile_frag_age"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight=".5"
+            android:text="PLACE HOLDER AGE"
+            android:textSize="15sp"
+            android:fontFamily="@font/kanit_bold" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:gravity="center">
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="2"
+            android:textAlignment="center"
+            android:text="@string/profile_frag_email"
+            android:background="@drawable/relevant_background"
+            android:textColor="?relevantText"
+            android:paddingHorizontal="5dp"
+            android:layout_margin="5dp"
+            android:textSize="15sp"/>
+        <TextView
+            android:id="@+id/profile_frag_email"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight=".5"
+            android:text="PLACE HOLDER EMAIL"
+            android:textSize="15sp"
+            android:fontFamily="@font/kanit_bold" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:gravity="center">
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="2"
+            android:textAlignment="center"
+            android:text="@string/profile_frag_cel"
+            android:background="@drawable/relevant_background"
+            android:textColor="?relevantText"
+            android:paddingHorizontal="5dp"
+            android:layout_margin="5dp"
+            android:textSize="15sp"/>
+        <TextView
+            android:id="@+id/profile_frag_cel"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight=".5"
+            android:text="PLACE HOLDER CEL"
+            android:textSize="15sp"
+            android:fontFamily="@font/kanit_bold" />
+    </LinearLayout>
+
+
+</LinearLayout>
