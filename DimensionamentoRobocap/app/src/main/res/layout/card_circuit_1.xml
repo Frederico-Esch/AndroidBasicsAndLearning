@@ -40,10 +40,12 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:adjustViewBounds="true"
-            android:maxWidth="200dp"
-            android:maxHeight="200dp"
+            android:padding="5dp"
+            android:maxWidth="150dp"
+            android:maxHeight="150dp"
             android:scaleType="fitCenter"
-            android:src="@drawable/voltage_divider" />
+            android:src="@drawable/voltage_divider"
+            android:background="@android:color/transparent" />
 
     </LinearLayout>
 

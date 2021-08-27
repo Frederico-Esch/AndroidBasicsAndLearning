@@ -31,6 +31,7 @@ public class MainActivity extends AppCompatActivity {
     NavigationView navigationView;
     ArrayList<CircuitHandler> circuitArrayList = new ArrayList<>();
     int last_circuit = -1;
+    ListaDeCircuitosFragment listaDeCircuitosFragment;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -93,6 +94,8 @@ public class MainActivity extends AppCompatActivity {
         switch (last_circuit){
             case -1:{
                 Toast.makeText(getApplicationContext(), R.string.no_selection,Toast.LENGTH_SHORT).show();
+                navigationView.setCheckedItem(R.id.menu_lista);
+                break;
             }
             case 0:{
                 trans.replace(R.id.frag_holder, new VoltageDividerFrag()).commit();
@@ -103,18 +106,33 @@ public class MainActivity extends AppCompatActivity {
     }
 
     public void changeFrag(boolean lista){
+        FragmentTransaction trans = getSupportFragmentManager().beginTransaction();
         if(lista) {
-            FragmentTransaction trans = getSupportFragmentManager().beginTransaction();
             Bundle bundle = new Bundle();
             bundle.putSerializable("array", (Serializable) circuitArrayList);
-            ListaDeCircuitosFragment listaDeCircuitosFragment = new ListaDeCircuitosFragment();
+            listaDeCircuitosFragment = new ListaDeCircuitosFragment();
             listaDeCircuitosFragment.setArguments(bundle);
             trans.replace(R.id.frag_holder, listaDeCircuitosFragment).commit();
             navigationView.setCheckedItem(R.id.menu_lista);
         }else{
-            Toast.makeText(getApplicationContext(), R.string.no_selection,Toast.LENGTH_SHORT).show();
+            trans.replace(R.id.frag_holder, new VoltageDividerFrag()).commit();
+            navigationView.setCheckedItem(R.id.menu_circuito);
         }
     }
 
+    @Override
+    protected void onPause() {
+        try{
+            changeFrag(false);
+        }catch (Exception e){
+            System.out.println(e.toString());
+        }
+        super.onPause();
+    }
 
+    @Override
+    protected void onResume() {
+        super.onResume();
+        changeFrag();
+    }
 }

@@ -28,7 +28,7 @@
                 android:layout_height="wrap_content"
                 android:layout_weight="1">
                 <com.google.android.material.textfield.TextInputEditText
-                    android:hint="Z1"
+                    android:hint="Z1(ohms)"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:inputType="number"/>
@@ -54,7 +54,7 @@
                 android:layout_height="wrap_content"
                 android:layout_weight="1">
                 <com.google.android.material.textfield.TextInputEditText
-                    android:hint="Z2"
+                    android:hint="Z2(ohms)"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:inputType="number"/>
@@ -80,7 +80,7 @@
                 android:layout_height="wrap_content"
                 android:layout_weight="1">
                 <com.google.android.material.textfield.TextInputEditText
-                    android:hint="Vin"
+                    android:hint="Vin(V)"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:inputType="number"/>
@@ -106,7 +106,7 @@
                 android:layout_height="wrap_content"
                 android:layout_weight="1">
                 <com.google.android.material.textfield.TextInputEditText
-                    android:hint="Vout"
+                    android:hint="Vout(V)"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:inputType="number"/>
@@ -120,6 +120,14 @@
                 android:textOff=""
                 android:background="@drawable/ic_baseline_add_circle_24"/>
         </LinearLayout>
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/calculateButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:text="@string/calculate"
+            android:backgroundTint="@color/orange_500"
+            android:textColor="@color/white" />
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
