@@ -9,6 +9,7 @@ import androidx.fragment.app.FragmentTransaction;
 import androidx.recyclerview.widget.GridLayoutManager;
 import androidx.recyclerview.widget.RecyclerView;
 
+import android.content.Intent;
 import android.os.Bundle;
 import android.os.Parcelable;
 import android.widget.Toast;
@@ -61,6 +62,11 @@ public class MainActivity extends AppCompatActivity {
                 }
                 case R.id.menu_circuito:{
                     changeFrag();
+                    break;
+                }
+                case R.id.menu_itens:{
+                    Intent intent = new Intent(getApplicationContext(), ListaDeComponentes.class);
+                    startActivity(intent);
                     break;
                 }
             }
@@ -133,6 +139,10 @@ public class MainActivity extends AppCompatActivity {
     @Override
     protected void onResume() {
         super.onResume();
-        changeFrag();
+        if(last_circuit == -1){
+            changeFrag(true);
+        }else{
+            changeFrag();
+        }
     }
 }

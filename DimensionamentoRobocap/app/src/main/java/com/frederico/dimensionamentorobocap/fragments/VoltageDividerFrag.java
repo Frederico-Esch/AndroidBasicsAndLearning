@@ -1,5 +1,7 @@
 package com.frederico.dimensionamentorobocap.fragments;
 
+import android.content.Context;
+import android.database.sqlite.SQLiteDatabase;
 import android.os.Bundle;
 
 import androidx.appcompat.widget.AppCompatButton;
@@ -17,7 +19,7 @@ import com.google.android.material.textfield.TextInputLayout;
 public class VoltageDividerFrag extends Fragment {
     RadioGroup radioGroup;
     TextInputLayout Z1, Z2, Vin, Vout;
-    AppCompatButton calculateBut;
+    AppCompatButton calculateBut, checkerZ1, checkerZ2;
     int valor = -1;
     @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
@@ -30,6 +32,11 @@ public class VoltageDividerFrag extends Fragment {
         Vout = frag.findViewById(R.id.Vout);
         Vin = frag.findViewById(R.id.Vin);
         calculateBut = frag.findViewById(R.id.calculateButton);
+        checkerZ1 = frag.findViewById(R.id.checkerZ1);
+        checkerZ2 = frag.findViewById(R.id.checkerZ2);
+
+        checkerZ1.setOnClickListener(this::click);
+        checkerZ2.setOnClickListener(this::click);
 
         Z1.getEditText().setEnabled(false);
         Z2.getEditText().setEnabled(false);
@@ -147,5 +154,28 @@ public class VoltageDividerFrag extends Fragment {
                 Toast.makeText(getContext(), R.string.navigation_error, Toast.LENGTH_SHORT).show();
             }
         }
+    }
+
+    public void click(View v){
+        try{
+            SQLiteDatabase banco_de_dados = getActivity().openOrCreateDatabase("lista_de_componentes", Context.MODE_PRIVATE, null);
+            banco_de_dados.execSQL("CREATE TABLE IF NOT EXISTS lista (circuito VARCHAR, tipo VARCHAR, valor VARCHAR)");
+            String resistor = "";
+            switch(v.getId()){
+                case R.id.checkerZ1:{
+                    resistor = "'" + Z1.getEditText().getText().toString() + " Ohms'";
+                    break;
+                }
+                case R.id.checkerZ2:{
+                    resistor = "'" + Z2.getEditText().getText().toString() + " Ohms'";
+                    break;
+                }
+            }
+            banco_de_dados.execSQL(String.format("INSERT INTO lista(circuito, tipo, valor) VALUES ('Divisor de voltagem', 'Resistor', %s )", resistor));
+            Toast.makeText(getContext(), "Adicionado!", Toast.LENGTH_SHORT).show();
+        }catch (Exception e){
+            Toast.makeText(getContext(), "Algo deu errado", Toast.LENGTH_SHORT).show();
+        }
+
     }
 }

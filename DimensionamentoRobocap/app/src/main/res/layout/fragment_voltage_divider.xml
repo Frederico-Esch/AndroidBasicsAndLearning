@@ -85,14 +85,6 @@
                     android:layout_height="wrap_content"
                     android:inputType="number"/>
             </com.google.android.material.textfield.TextInputLayout>
-            <androidx.appcompat.widget.AppCompatButton
-                android:id="@+id/checkerVin"
-                android:layout_width="match_parent"
-                android:layout_height="match_parent"
-                android:layout_weight="6"
-                android:textOn=""
-                android:textOff=""
-                android:background="@drawable/ic_baseline_add_circle_24"/>
         </LinearLayout>
 
         <LinearLayout
@@ -111,14 +103,6 @@
                     android:layout_height="wrap_content"
                     android:inputType="number"/>
             </com.google.android.material.textfield.TextInputLayout>
-            <androidx.appcompat.widget.AppCompatButton
-                android:id="@+id/checkerVout"
-                android:layout_width="match_parent"
-                android:layout_height="match_parent"
-                android:layout_weight="6"
-                android:textOn=""
-                android:textOff=""
-                android:background="@drawable/ic_baseline_add_circle_24"/>
         </LinearLayout>
         <androidx.appcompat.widget.AppCompatButton
             android:id="@+id/calculateButton"
