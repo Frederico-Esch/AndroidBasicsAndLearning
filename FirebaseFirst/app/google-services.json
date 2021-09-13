@@ -1,0 +1,47 @@
+{
+  "project_info": {
+    "project_number": "194018812699",
+    "project_id": "primeiro-teste-93134",
+    "storage_bucket": "primeiro-teste-93134.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:194018812699:android:92dd90d8717fd98ca5a9be",
+        "android_client_info": {
+          "package_name": "com.frederico.firebasefirst"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "194018812699-qv9cr2dlumcgp0ar8ihiluvejern0roa.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.frederico.firebasefirst",
+            "certificate_hash": "c83b93bdfc2f46bb92e6e769c8f364e2feb3e0d7"
+          }
+        },
+        {
+          "client_id": "194018812699-7lm0nhn5e5ic234d97or9h0vvhprdrll.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAG-_tLnP58Vr0GiV0Xlk7a5JBp4ZZ2yJk"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "194018812699-7lm0nhn5e5ic234d97or9h0vvhprdrll.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
