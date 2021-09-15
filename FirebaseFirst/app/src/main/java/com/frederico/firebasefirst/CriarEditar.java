@@ -54,8 +54,6 @@ public class CriarEditar extends AppCompatActivity {
                 @Override
                 public void onDataChange(@NonNull DataSnapshot snapshot) {
                     for (DataSnapshot snap : snapshot.getChildren()){
-                        System.out.println(ID);
-                        System.out.println(snap.getKey());
                         if(snap.getKey().equals(ID)){
                             titleInput.getEditText().setText(snap.child("titulo").getValue().toString());
                             contentInput.getEditText().setText(snap.child("conteudo").getValue().toString());
