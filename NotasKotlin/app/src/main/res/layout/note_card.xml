@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_gravity="center_horizontal"
+    android:layout_margin="8dp"
+    app:cardElevation="0dp">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_gravity="center"
+        android:background="@drawable/card_background"
+        android:gravity="center_horizontal">
+
+        <LinearLayout
+            android:id="@+id/edit"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:gravity="center_horizontal"
+            android:layout_weight="20"
+            android:foreground="?attr/selectableItemBackground"
+            android:clickable="true"
+            android:focusable="true"
+            tools:ignore="UseCompoundDrawables">
+            <TextView
+                android:id="@+id/Titulo_nota"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="TITLE PLACE Holder AA AA AA AA AA AA"
+                android:textStyle="bold"
+                android:textAllCaps="false"
+                android:textSize="23sp"
+                android:textAlignment="center"
+                android:layout_gravity="center"
+                android:textColor="@color/black"
+                android:layout_margin="8dp"
+                android:maxLines="1"
+                android:ellipsize="marquee"/>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+                <ImageView
+                    android:id="@+id/lable_flag"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="start"
+                    android:layout_marginHorizontal="20dp"
+                    app:tint="@color/black"
+                    android:src="@drawable/ic_baseline_label_important_24" />
+                <TextView
+                    android:id="@+id/display_text_excert"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="EXEMPLO "
+                    android:textAllCaps="false"
+                    android:maxLines="2"
+                    android:ellipsize="end"
+                    android:textSize="12sp"
+                    android:textColor="@color/black"
+                    android:textStyle="italic"/>
+            </LinearLayout>
+
+
+        </LinearLayout>
+
+        <ImageButton
+            android:id="@+id/botao_deletar"
+            android:layout_gravity="center"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/ic_baseline_delete_24"
+            android:background="@android:color/transparent"
+            app:tint="@android:color/holo_red_dark"
+            android:foreground="?attr/selectableItemBackground"
+            android:scaleX="2"
+            android:scaleY="2"
+            android:layout_margin="8dp"
+            android:layout_weight="1"
+            android:minHeight="50dp"
+            android:minWidth="30dp"/>
+
+    </LinearLayout>
+</androidx.cardview.widget.CardView>

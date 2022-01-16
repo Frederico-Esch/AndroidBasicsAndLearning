@@ -1,0 +1,7 @@
+<resources>
+    <string name="app_name">DrawerKot</string>
+    <string name="OPEN">open</string>
+    <string name="CLOSE">close</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+</resources>
